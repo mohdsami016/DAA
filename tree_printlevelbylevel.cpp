@@ -5,7 +5,7 @@ using namespace std;
 struct Node{
     int val;
     Node *left,*right;
-    Node(int v):val(v),left(nullptr),right(nullptr){}
+    Node(int v):val(v),left(NULL),right(NULL){}
 };
 
 Node* buildTree(){
@@ -13,7 +13,7 @@ Node* buildTree(){
     cout<<"Enter root value: ";
     cin>>rootVal;
 
-    if(rootVal==-1)return nullptr;
+    if(rootVal==-1)return NULL;
 
     Node* root=new Node(rootVal);
     queue<Node*> q;
